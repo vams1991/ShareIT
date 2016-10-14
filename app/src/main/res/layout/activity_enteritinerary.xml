@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_updateProfile"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right"
+            android:text="UPDATE PROFILE"/>
+
+        <Button android:id="@+id/btn_logout"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dp"
+            android:text="LOG OUT"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <LinearLayout android:id="@+id/ll_from"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText android:id="@+id/et_from"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:hint="FROM CITY"/>
+
+        <Button android:id="@+id/btn_gps"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="G"/>
+
+    </LinearLayout>
+
+    <EditText android:id="@+id/et_to"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="TO CITY"/>
+
+    <EditText android:id="@+id/et_traveldate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="MM/DD/YYYY"/>
+
+    <Button android:id="@+id/btn_SS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SAVE AND SEARCH"/>
+
+    <ProgressBar android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_marginRight="5dp" />
+
+
+    <Button android:id="@+id/btndirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DIRECTIONS"/>
+
+    <Button android:id="@+id/btnrecommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="PLACES NEARBY"/>
+
+
+</LinearLayout>
